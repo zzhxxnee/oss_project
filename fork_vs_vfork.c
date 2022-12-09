@@ -68,11 +68,6 @@ int main(int argc, char **argv)
 		} else if (pid > 0) {
 			clock_gettime(CLOCK_MONOTONIC, &end_time);
 			printf("Elased Time for fork() with %luGB data: %lu ns\n", data_size_GB, get_timediff(&start_time, &end_time));
-			//printf("I'm parent pid=%d\n", getpid());
 		}
 	}
-
-	
-
-
 }
